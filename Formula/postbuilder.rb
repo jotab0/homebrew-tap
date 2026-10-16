@@ -5,21 +5,21 @@
 class Postbuilder < Formula
   desc "Ayudante de Post Builder (INN Studio) para Claude Code y la exportación de posteos"
   homepage "https://github.com/jotab0/postbuilder-releases"
-  version "0.1.0"
+  version "0.1.1"
   license "Proprietary"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/jotab0/postbuilder-releases/releases/download/v0.1.0/postbuilder_0.1.0_darwin_amd64.tar.gz"
-    sha256 "2f134bf404b893dd33358b1527e0e04a720ba7bf5413ee6153541d7611325b55"
+    url "https://github.com/jotab0/postbuilder-releases/releases/download/v0.1.1/postbuilder_0.1.1_darwin_amd64.tar.gz"
+    sha256 "ce6d466c52e534ed0d43d6c404fb0bbbcf1d1c8954c072d4af99881c87940823"
 
     define_method(:install) do
       bin.install "postbuilder"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/jotab0/postbuilder-releases/releases/download/v0.1.0/postbuilder_0.1.0_darwin_arm64.tar.gz"
-    sha256 "cd697fb98ed5f7d65ef858877a72f536877b0f75cedf4b67bd3853b57bf2594b"
+    url "https://github.com/jotab0/postbuilder-releases/releases/download/v0.1.1/postbuilder_0.1.1_darwin_arm64.tar.gz"
+    sha256 "352aac7d09d04cb974feafddd0865794e4da6c73429586f0511c59e4a2ff7026"
 
     define_method(:install) do
       bin.install "postbuilder"
